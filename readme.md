@@ -1,0 +1,3 @@
+- [Hopfield Networks are useless. Here’s why you should learn them.](https://towardsdatascience.com/hopfield-networks-are-useless-heres-why-you-should-learn-them-f0930ebeadcd)
+- [Berlin uni Hopfield nets](https://page.mi.fu-berlin.de/rojas/neural/chapter/K13.pdf)
+- [Wiki](https://en.wikipedia.org/wiki/Hopfield_network)

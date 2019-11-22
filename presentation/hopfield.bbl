@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{khanacademy_neuron}
+Khan Academy: The neoron and nervous system
+  \url{https://www.khanacademy.org/science/biology/human-biology#neuron-nervous-system}.
+
+\bibitem{hnetmedium}
+Hopfield Networks are useless. Here’s why you should learn them.
+  \url{https://towardsdatascience.com/hopfield-networks-are-useless-heres-why-you-should-learn-them-f0930ebeadcd}.
+
+\bibitem{hnetwiki}
+Hopfield-networks Wikipedia page
+  \url{https://en.wikipedia.org/wiki/Hopfield_network}.
+
+\bibitem{aboudib:hal-01058303}
+Ala ABOUDIB, Vincent Gripon, and Xiaoran JIANG.
+\newblock {A study of retrieval algorithms of sparse messages in networks of
+  neural cliques}.
+\newblock In {\em {COGNITIVE 2014 : the 6th International Conference on
+  Advanced Cognitive Technologies and Applications}}, pages 140--146, Venise,
+  Italy, May 2014.
+
+\bibitem{geszti-neural-networks}
+Tamás Geszti.
+\newblock {\em Physical Models of Neural Networks}.
+\newblock World Scientific Pub Co Inc, 1990.
+
+\bibitem{hebb2005organization}
+D.O. Hebb.
+\newblock {\em The Organization of Behavior: A Neuropsychological Theory}.
+\newblock Taylor \& Francis, 2005.
+
+\bibitem{Liou1999}
+Cheng-Yuan Liou and Shao-Kuo Yuan.
+\newblock Error tolerant associative memory.
+\newblock {\em Biological Cybernetics}, 81(4):331--342, Oct 1999.
+
+\bibitem{pitssmcculloch}
+W.~McCulloch, W.S. \&~Pitts.
+\newblock {\em Bulletin of Mathematical Biophysics (1943) 5: 115.}
+
+\bibitem{quantum-hopfield}
+Patrick {Rebentrost}, Thomas~R. {Bromley}, Christian {Weedbrook}, and Seth
+  {Lloyd}.
+\newblock {Quantum Hopfield neural network}.
+\newblock 98(4):042308, Oct 2018.
+
+\bibitem{Rosenblatt58theperceptron}
+F.~Rosenblatt.
+\newblock The perceptron: A probabilistic model for information storage and
+  organization in the brain.
+\newblock {\em Psychological Review}, pages 65--386, 1958.
+
+\bibitem{LogicLearningHN_Arxiv}
+Saratha {Sathasivam} and Wan Ahmad Tajuddin~Wan {Abdullah}.
+\newblock {Logic Learning in Hopfield Networks}.
+\newblock {\em arXiv e-prints}, page arXiv:0804.4075, Apr 2008.
+
+\end{thebibliography}
