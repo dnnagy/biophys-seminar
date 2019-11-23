@@ -445,9 +445,22 @@ a5paper,left=15pt,right=15pt,top=3pt,bottom=3pt,%
 
 \newpage
 \section*{Data reconstruction}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[height=0.5\textheight]{images/hopfield-energy-plot.png}
+% \end{figure}
 \begin{figure}[h!]
+  \centering
+  \begin{minipage}{0.69\textwidth}
     \centering
-    \includegraphics[height=0.5\textheight]{images/hopfield-energy-plot.png}
+    \includegraphics[width=1.0\textwidth]{./images/hopfield-energy-plot.png} % second figure itself
+    %\caption{second figure}
+\end{minipage}\hfill
+  \begin{minipage}{0.29\textwidth}
+      \centering
+      \includegraphics[width=1.0\textwidth]{./images/Hopfield-net-vector.png} % first figure itself
+      %\caption{first figure}
+  \end{minipage}
 \end{figure}
 \begin{itemize}
     \item If we give a corrupted input, the systems dynamics will drive the network to the
@@ -483,7 +496,56 @@ a5paper,left=15pt,right=15pt,top=3pt,bottom=3pt,%
     Hopfield-networks \cite{aboudib:hal-01058303}.
 \end{itemize}
 
+\newpage
+\section*{Quantum Hopfield networks}
+\begin{itemize}
+    \item Over the past few decades, quantum information science became reality rather than a physicists' utopy.
+    \item Many quantum devices are accessible to experimentalists and the quantum hype is huge.
+    \item Given the fact that artificial neural networks have made a huge impact in computer science,
+    and quantum computing seems feasible, scientists started talking about quantum machine learning.
+    \item In 2018, the quantum version of the Hopfield networks was described by Patrick Rebentrost et. al. \cite{quantum-hopfield}
+    \item Why quantum Hopfield-nets?
+    \item An exponentially large network can be stored in a polynomial number of quantum bits by encoding the network into the amplitudes of quantum states.
+    \item Using quantum algorithms a computational complexity that is logarithmic in the dimension of the data can be achieved.
+    \item The quantum Hopfield network can be used as a genetic sequence recognizer.
+\end{itemize}
 
+\newpage
+\section*{Quantum Hopfield networks}
+\begin{itemize}
+    \item The d-dimensional information is encoded in d-level quantum states:
+    \begin{equation*}
+        \mathbf x = \{x_1,\dots,x_d\}\rightarrow |\mathbf x|_2\ket x,
+    \end{equation*}
+    where 
+    \begin{equation*}
+        |\mathbf x|_2 = \sqrt{\sum\limits_{i=1}^d x_i^2}~\textrm{and}~\ket x = \frac{1}{|\mathbf x|_2}\sum\limits_{i=1}^dx_i\ket i.
+    \end{equation*}
+    \item this $d$-level quantum system can be implemented using $N=\log_2 d$ qubits, so qubit representation of the network
+    scales logarithmically with the number of neurons \cite{quantum-hopfield}.
+    \item training items $\mathbf x^{(m)}$ can be associated with pure states $\ket{x^{(m)}}$.
+    \item A weight matrxi $W$ can be associated to the mixed state $\hat \rho$:
+    \begin{equation*}
+        \hat \rho = \frac{1}{M}\sum\limits_{m=1}^M\ket{x^{(m)}}\bra{x^{(m)}} = W + \frac{\mathbb 1_d}{d}.
+    \end{equation*}
+    \item This state $\rho$ then can be used to retrive states $\ket{x^{(m)}}$ using quantum state tomography and other tricks \cite{quantum-hopfield}.
+    \item It was showed that the quantum Hopfield network outperforms the classical HN in RNA sequence recognition. \cite{quantum-hopfield}.
+    \item The bottlenecks of the quantum Hopfield network are pure state preparation and state tomography at readout.
+    \item It can be still exponentially better in time complexity than the classical Hopfield network.
+\end{itemize}
+
+\newpage
+\section*{Conclusion}
+\begin{itemize}
+    \item The Hopfield-network was one of the earliest and simplest form of neural networks.
+    \item The Hopfield network can act as a non-sequential associative memory,
+    with technological application in image processing and optimization.
+    \item Hopfield networks can be trained with the Hebbian training rule which is fairly simple.
+    \item Other, more advanced training rules exist.
+    \item Hopfield networks are not competitive with the modern neural networks, which apply 
+    many hidden layers and are trained with automatic differentiation and backpropagation.
+
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF RIZSA %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PAGE WITH 2 FIGURES  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
